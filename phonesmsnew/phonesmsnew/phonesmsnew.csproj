@@ -1,0 +1,360 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{405FC53B-41B2-4223-BEEF-BA8EA0B92E26}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>phonesmsnew</RootNamespace>
+    <AssemblyName>phonesmsnew</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="absentstudentreport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="absentstudentreport.Designer.cs">
+      <DependentUpon>absentstudentreport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin.Designer.cs">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adphsms.cs" />
+    <Compile Include="allstudentreport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="allstudentreport.Designer.cs">
+      <DependentUpon>allstudentreport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BACKUP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BACKUP.Designer.cs">
+      <DependentUpon>BACKUP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CHANGEPA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CHANGEPA.Designer.cs">
+      <DependentUpon>CHANGEPA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="code\ManageDb.cs" />
+    <Compile Include="code\ROOMTEACHERCLS.cs" />
+    <Compile Include="code\SMSCODE.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ROOMTEACHER.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ROOMTEACHER.Designer.cs">
+      <DependentUpon>ROOMTEACHER.cs</DependentUpon>
+    </Compile>
+    <Compile Include="schoolDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>schoolDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="schoolDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>schoolDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="schoolDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>schoolDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="schoolDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>schoolDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="schoolDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>schoolDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="schoolDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>schoolDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="schoolDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>schoolDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="SMSA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SMSA.Designer.cs">
+      <DependentUpon>SMSA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="teacher report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="teacher report.Designer.cs">
+      <DependentUpon>teacher report.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="absentstudentreport.resx">
+      <DependentUpon>absentstudentreport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin.resx">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="allstudentreport.resx">
+      <DependentUpon>allstudentreport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BACKUP.resx">
+      <DependentUpon>BACKUP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHANGEPA.resx">
+      <DependentUpon>CHANGEPA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Report1.rdlc" />
+    <EmbeddedResource Include="Report2.rdlc" />
+    <EmbeddedResource Include="Report3.rdlc" />
+    <EmbeddedResource Include="Report4.rdlc" />
+    <EmbeddedResource Include="ROOMTEACHER.resx">
+      <DependentUpon>ROOMTEACHER.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SMSA.resx">
+      <DependentUpon>SMSA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="teacher report.resx">
+      <DependentUpon>teacher report.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="schoolDataSet.xsc">
+      <DependentUpon>schoolDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="schoolDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>schoolDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="schoolDataSet.xss">
+      <DependentUpon>schoolDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="schoolDataSet1.xsc">
+      <DependentUpon>schoolDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="schoolDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>schoolDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="schoolDataSet1.xss">
+      <DependentUpon>schoolDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="schoolDataSet2.xsc">
+      <DependentUpon>schoolDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="schoolDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>schoolDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="schoolDataSet2.xss">
+      <DependentUpon>schoolDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="schoolDataSet3.xsc">
+      <DependentUpon>schoolDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="schoolDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>schoolDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="schoolDataSet3.xss">
+      <DependentUpon>schoolDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="schoolDataSet4.xsc">
+      <DependentUpon>schoolDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="schoolDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>schoolDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="schoolDataSet4.xss">
+      <DependentUpon>schoolDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="schoolDataSet5.xsc">
+      <DependentUpon>schoolDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="schoolDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>schoolDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="schoolDataSet5.xss">
+      <DependentUpon>schoolDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="schoolDataSet6.xsc">
+      <DependentUpon>schoolDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="schoolDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>schoolDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="schoolDataSet6.xss">
+      <DependentUpon>schoolDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Chrysanthemum.jpg" />
+    <Content Include="school.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="school_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>school.mdf</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Sql.Server.Express.10.0">
+      <Visible>False</Visible>
+      <ProductName>SQL Server 2008 Express</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
